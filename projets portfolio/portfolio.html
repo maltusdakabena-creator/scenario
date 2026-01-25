@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - DAKABENA Henoc</title>
+    <link rel="shortcut icon" href="shortcut-icon.ico" type="image/x-icon">
+    <meta name="author" content="DAKABENA Maltus Henoc">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <h1 id="monnom"><strong>DAKABENA Maltus Henoc</strong></h1>
+        <ul>
+            <li><a href="#accueil">Accueil</a></li>
+            <li><a href="#apropos">À propos</a></li>
+            <li><a href="#projets">Projets</a></li>
+            <li><a href="#competences">Compétences</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Accueil -->
+    <header id="accueil" class="accueil">
+        <div class="head">
+            <h2>Je suis <span>Maltus Henoc</span>, développeur en devenir passionné par le web et le design !</h2>
+            <a href="#projets" class="btn">Voir mes projets</a>
+        </div>
+        <div>
+            <img src="developpeur.png" alt="Illustration d'un environnement de développeur" class="environnement">
+        </div>
+    </header>
+
+    <!-- À propos -->
+    <section id="apropos" class="apropos">
+        <h2>À propos</h2>
+        <section style="display: flex;"">
+         <div>
+            <p>Je m'appelle <strong>DAKABENA Maltus Henoc</strong>, passionné par la création de sites web modernes et interactifs.
+            <br>Je suis actuellement étudiant en développement web et je cherche à améliorer mes compétences en <strong>JavaScript, HTML et CSS</strong>.
+            <br>J'adore transformer mes idées en projets concrets et expérimenter avec les nouvelles technologies. <br><a href="CV_DAKABENA.pdf" download class="btn">Télécharger mon CV</a>
+            </p>
+         </div>
+         <div>
+            <img src="henoc.img-removebg-preview.png" alt="photo d'henoc" style="display:flex;" width="450px" height="450px">
+         </div>
+        </section>
+    </section>
+
+    <!-- Projets -->
+    <section id="projets" class="projets">
+        <h2>Mes Projets</h2>
+        <div class="cards">
+            <article class="card">
+                <h3>Mini-jeu interactif</h3>
+                <p>Un mini-jeu en JavaScript qui utilise des événements DOM.</p>
+                <a href="exercicejs1.html" class="btn">Voir</a>
+            </article>
+            <article class="card">
+                <h3>Calculatrice hypothécaire</h3>
+                <p>Un projet pratique en HTML/CSS/JS.</p>
+                <a href="calculhypothèque.html" class="btn">Voir</a>
+            </article>
+            <article class="card">
+                <h3>Autre projet</h3>
+                <p>Un projet expérimental en HTML/CSS/JS.</p>
+                <a href="#" class="btn">Voir</a>
+            </article>
+        </div>
+    </section>
+
+    <!-- Compétences -->
+    <section id="competences" class="competences">
+        <h2>Mes Compétences</h2>
+        <div class="skills">
+            <h3>Hard Skills</h3>
+            <ul>
+                <li>HTML <br><input type="range" min="0" max="100" value="70" width="200px" disabled id="range"></li>
+                <li>CSS <br><input type="range" min="0" max="100" value="30" width="200px" disabled id="range"></li>
+                <li>JavaScript <br><input type="range" min="0" max="100" value="20" width="200px" disabled id="range"></li>
+                <li>Pycharm <br><input type="range" min="0" max="100" value="50" width="200px" disabled id="range"></li>
+                <li>VS Code <br><input type="range" min="0" max="100" value="50" width="200px" disabled id="range"></li>
+                <li>python <br><input type="range" min="0" max="100" value="50" width="200px" disabled id="range"></li>
+            </ul>
+        </div>
+        <div class="skills">
+            <h3>Soft Skills</h3>
+            <ul>
+                <li>Gestion de projet   </li>
+                <li>Résolution de problème </li>
+                <li>Adaptabilité </li>
+                <li>esprit critique </li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <h2>Contactez-moi</h2>
+        <form id="form" method="get" action="https://github.com/maltusdakabena-creator/scenario" >
+            <label for="prenom">Votre prénom</label>
+            <input type="text" id="prenom" name="prenom" required>
+
+            <label for="nom">Votre nom</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="sujet">Votre sujet</label>
+            <input type="text" id="sujet" name="sujet" placeholder="Développement d'un site vitrine" required>
+
+            <label for="message">Votre message</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit" class="btn">Envoyer</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>Designed by Henoc with HTML, CSS & JS</p>
+        <p>Tous droits réservés - 2025</p>
+    </footer>
+</body>
+</html>

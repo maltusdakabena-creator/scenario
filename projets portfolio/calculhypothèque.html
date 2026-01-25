@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculateur de prêt</title>
+</head>
+<body>
+
+    <h2>Calculateur de prêt hypothécaire</h2>
+
+    <p>
+        Montant du prêt :
+        <input type="number" id="montant">
+    </p>
+
+    <p>
+        Taux d'intérêt annuel (%) :
+        <input type="number" id="taux">
+    </p>
+
+    <p>
+        Durée du prêt (en années) :
+        <input type="number" id="duree">
+    </p>
+
+    <button onclick="calculer()">Calculer</button>
+
+    <p id="resultat"></p>
+
+    <script>
+        function getValeur(id) {
+            return parseFloat(document.getElementById(id).value);
+        }
+
+        function verifierDonnees(montant, taux, duree) {
+            if (montant <= 0 || isNaN(montant)) {
+                alert("Montant du prêt invalide !");
+                return false;
+            }
+            if (taux <= 0 || isNaN(taux)) {
+                alert("Taux d'intérêt invalide !");
+                return false;
+            }
+            if (duree <= 0 || isNaN(duree)) {
+                alert("Durée du prêt invalide !");
+                return false;
+            }
+            return true;
+        }
+
+        // Fonction de calcul du paiement mensuel
+        function calculPaiementMensuel(P, tauxAnnuel, dureeAnnees) {
+            let r = (tauxAnnuel / 100) / 12; // taux mensuel
+            let n = dureeAnnees * 12;        // nombre de mois
+
+            let M = P * (r * Math.pow(1 + r, n)) / (Math.pow(1 + r, n) - 1);
+            return M;
+        }
+
+        function calculer() {
+            let montant = getValeur("montant");
+            let taux = getValeur("taux");
+            let duree = getValeur("duree");
+
+            if (verifierDonnees(montant, taux, duree)) {
+                let paiement = calculPaiementMensuel(montant, taux, duree);
+                document.getElementById("resultat").innerHTML =
+                    "Paiement mensuel : " + paiement.toFixed(2) + " FCFA";
+            }
+        }
+    </script>
+
+</body>
+</html>

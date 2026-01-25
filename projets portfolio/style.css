@@ -1,0 +1,175 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #004225;
+    padding: 15px 30px;
+    color: white;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav a:hover {
+    color: gold;
+}
+
+/* Accueil */
+.accueil {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #cdd9b6;
+    padding: 50px;
+}
+
+.accueil h2 span {
+    color: #e67e22;
+}
+.accueil img {
+    width: 50%;
+    height: 50%;
+    text-align: right;
+    float: right;
+    border-color: #9da9ac;
+}
+
+.btn {
+    display: inline-block;
+    background: green;
+    color: white;
+    padding: 10px 20px;
+    margin-top: 15px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: #2ecc71;
+}
+
+/* Sections */
+section {
+    padding: 50px;
+}
+.apropos {
+    background-color: #799b36;
+}
+.projets {
+    background-color: #cdd9b6;
+}
+
+section h2 {
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: center;
+}
+
+/* Projets */
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background: #bdc3c7;
+    padding: 20px;
+    border-radius: 8px;
+    flex: 1;
+    min-width: 250px;
+}
+
+/* Compétences */
+.competences h2 {
+    text-align: center;
+}
+.competences {
+    background-color: #0a8b40;
+}
+.skills ul {
+    list-style: none;
+    padding: 0;
+}
+
+.skills li {
+    background: #9ec111;
+    margin: 5px 0;
+    padding: 8px;
+    border-radius: 5px;
+}
+.skills input {
+    color: #1222d2;
+}
+input[type="range"] {
+    width: 100%;
+    height: 20px;
+    background-color: #1222d2;
+}
+
+/* Contact */
+.contact {
+    text-align: center;
+    justify-content: center;
+    background-color: #169a6e;
+}
+#form {
+    justify-content: center;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 500px;
+}
+
+form input, form textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    text-align: center;
+}
+
+form button {
+    text-align: center;
+    background: #2980b9;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    text-align: center;
+    background: #3498db;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #004225;
+    color: white;
+    padding: 20px;
+}
